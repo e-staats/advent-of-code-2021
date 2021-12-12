@@ -1,6 +1,3 @@
-from os import confstr
-
-
 def main():
     with open("../inputs/day7.txt") as file:
         inputs = file.readline().split(",")

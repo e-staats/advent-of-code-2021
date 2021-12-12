@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>       // for time()
+#include <time.h> // for time()
 
 int main(void)
 {

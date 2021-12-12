@@ -1,4 +1,5 @@
 from rich import print
+from copy import deepcopy
 
 
 def main():
@@ -43,10 +44,9 @@ def main():
         find_g(starter, decode, mapping)
         print(mapping)
 
-def find_g(starter, decode, mapping):
-    print(decode[4])
-    print(mapping['a'])
-    decode[4].add(mapping['a'])
+def find_g(starter, decode4, mapping):
+    check = deepcopy(decode4) 
+    check.add('a')
     print(check)
     for set in starter:
         diff = check - set
